@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color:red;
+  }
+
+
+section-4 {
+    border: 1px solid brown;
+    width: 90%;
+    height: 80%;
+    position: absolute;
+}
+
+section-1 {
+    border: 1px solid blue;
+    width: 33%;
+    height: 100%;
+    float: left;
+  }
+
+section-2 {
+    border: 1px solid red;
+    width: 33%;
+    height: 100%;
+    position: absolute;
+  }
+
+section-3 {
+    border: 1px solid green;
+    width: 33%;
+    height: 100%;
+    float: right;
+  }  
