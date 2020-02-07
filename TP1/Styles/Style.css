@@ -47,18 +47,27 @@ body {
 .section {
     position: absolute;
     width: 30%;
+
 }
 
 .left-section {
     border: 1px solid blue;
     height: 100%;
+    background-color: white;
   }
+.section-title{
+    color: black;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 20px;
 
+}
 .middle-section {
     border: 1px solid red;
     height: 100%;
     position: absolute;
     left: 35%;
+    background-color: white;
   }
 
 .right-section {
@@ -66,4 +75,5 @@ body {
     height: 100%;
     position: absolute;
     right: 0%;
+    background-color: white;
   }
