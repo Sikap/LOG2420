@@ -4,24 +4,55 @@ header.Titre{
   height: 63px;
 
 }
-
-h1 {
-  margin: 0px;
-  color: white;
-  font-family:'Roboto';
-  font-size: 30px;
-  position: absolute;
-  left: 22px;
-  top: 20px;
-}
-
 body {
+  margin: 0px;
+  background-color: rgba(242, 242, 242, 1);
+  position: relative;
+  left: 0px;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+
+  }
+  h1 {
     margin: 0px;
-    background-color: rgba(242, 242, 242, 1);
-    position: relative;
-    left: 0px;
-    width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+    color: white;
+    font-family:'Roboto';
+    font-size: 30px;
+    position: absolute;
+    left: 22px;
+    top: 20px;
+  }
+  p {
+    color:red;
+  }
+
+
+section-4 {
+    border: 1px solid brown;
+    width: 90%;
+    height: 80%;
+    position: absolute;
 }
+
+section-1 {
+    border: 1px solid blue;
+    width: 33%;
+    height: 100%;
+    float: left;
+  }
+
+section-2 {
+    border: 1px solid red;
+    width: 33%;
+    height: 100%;
+    position: absolute;
+  }
+
+section-3 {
+    border: 1px solid green;
+    width: 33%;
+    height: 100%;
+    float: right;
+  }
