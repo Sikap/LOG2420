@@ -1,0 +1,27 @@
+header.Titre{
+
+  background-color: rgba(33, 150, 243, 1);
+  height: 63px;
+
+}
+
+h1 {
+  margin: 0px;
+  color: white;
+  font-family:'Roboto';
+  font-size: 30px;
+  position: absolute;
+  left: 22px;
+  top: 20px;
+}
+
+body {
+    margin: 0px;
+    background-color: rgba(242, 242, 242, 1);
+    position: relative;
+    left: 0px;
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
