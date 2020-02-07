@@ -36,30 +36,34 @@ body {
     color:red;
   }
 
-section-4 {
+
+#main-section {
     border: 1px solid brown;
     width: 90%;
     height: 80%;
     position: absolute;
+    top: 20%
+}
+.section {
+    position: absolute;
+    width: 30%;
 }
 
-section-1 {
+.left-section {
     border: 1px solid blue;
-    width: 33%;
     height: 100%;
-    float: left;
   }
 
-section-2 {
+.middle-section {
     border: 1px solid red;
-    width: 33%;
     height: 100%;
     position: absolute;
+    left: 35%;
   }
 
-section-3 {
+.right-section {
     border: 1px solid green;
-    width: 33%;
     height: 100%;
-    float: right;
+    position: absolute;
+    right: 0%;
   }
