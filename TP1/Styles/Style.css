@@ -15,7 +15,7 @@ body {
   text-align: left;
 
   }
-  h1 {
+  .hero {
     margin: 0px;
     color: white;
     font-family:'Roboto';
@@ -35,24 +35,26 @@ section-4 {
     height: 80%;
     position: absolute;
 }
-
-section-1 {
-    border: 1px solid blue;
+.section {
+    position: absolute;
+    top: 30%;
     width: 33%;
+}
+
+.left-section {
+    border: 1px solid blue;
     height: 100%;
-    float: left;
   }
 
-section-2 {
+.middle-section {
     border: 1px solid red;
-    width: 33%;
     height: 100%;
     position: absolute;
+    top: 30%
   }
 
-section-3 {
+.right-section {
     border: 1px solid green;
-    width: 33%;
     height: 100%;
-    float: right;
+    position: absolute;
   }
