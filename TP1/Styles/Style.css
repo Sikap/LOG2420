@@ -29,16 +29,16 @@ body {
   }
 
 
-section-4 {
+#main-section {
     border: 1px solid brown;
     width: 90%;
     height: 80%;
     position: absolute;
+    top: 20%
 }
 .section {
     position: absolute;
-    top: 30%;
-    width: 33%;
+    width: 30%;
 }
 
 .left-section {
@@ -50,11 +50,12 @@ section-4 {
     border: 1px solid red;
     height: 100%;
     position: absolute;
-    top: 30%
+    left: 35%;
   }
 
 .right-section {
     border: 1px solid green;
     height: 100%;
     position: absolute;
+    right: 0%;
   }
