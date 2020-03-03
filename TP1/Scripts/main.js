@@ -1,7 +1,7 @@
-let displayF = () => {
-    console.log('hi');
+let displayFederals = () => {
+    console.log('federals');
 };
 
-let displayP = () => {
-    console.log('hi');
+let displayProvincials = () => {
+    console.log('provincials');
 };

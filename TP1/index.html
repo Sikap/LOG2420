@@ -11,7 +11,7 @@
     <header class="Title">
       <h1 class="t1">PHAROS</h1>
       <i class="material-icons ">search</i>
-      <i class="material-icons depIcons">more_vert</i>
+      <i class="material-icons depIcons">more_vert</i> 
     </header>
 
   <section-4 id="main-section" >
@@ -19,15 +19,26 @@
         <h1 class="section-title">Élections</h1>
         <ul>
         <form>
-          <input class="radio-button" onclick="displayF()" type="radio" id="name" value="name">
-          <label for="name">43e élection fédérale</label> <br>
-                            21 octobre 2019
-          <li>Élections générales provinciales</li>
-          1er octobre 2018
-          <li>42e élection fédérale</li>
-          19 octobre 2015
-          <li>Élections générales provinciales</li>
-          7 avril 2014
+          <label class="radioButton"><p class="label">43e élection fédérale</p>
+                            <p class = "sub-label">21 octobre 2019</p>
+          <input onclick="displayFederals()" type="radio" checked ="checked" name="radio">
+           <span class="checkmark"></span>                 
+          </label>
+          <label class="radioButton"><p class="label">Élections générales provinciales</p>
+                            <p class = "sub-label">1er octobre 2018</p>
+          <input onclick="displayProvincials()" type="radio" name="radio">
+           <span class="checkmark"></span>                 
+          </label>
+          <label class="radioButton"><p class="label">42e élection fédérale</p>
+                            <p class = "sub-label">19 octobre 2015</p>
+          <input onclick="displayFederals()" type="radio" name="radio">
+           <span class="checkmark"></span>                 
+          </label>
+          <label class="radioButton"><p class="label">Élections générales provinciales</p>
+                            <p class = "sub-label">7 avril 2014</p>
+          <input onclick="displayProvincials()" type="radio" name="radio">
+           <span class="checkmark"></span>                 
+          </label>
         </form>  
         </ul>
       </div>
