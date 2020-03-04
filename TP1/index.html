@@ -11,7 +11,7 @@
     <header class="Title">
       <h1 class="t1">PHAROS</h1>
       <i class="material-icons ">search</i>
-      <i class="material-icons depIcons">more_vert</i> 
+      <i class="material-icons depIcons">more_vert</i>
     </header>
 
   <section-4 id="main-section" >
@@ -22,30 +22,112 @@
           <label class="radioButton"><p class="label">43e élection fédérale</p>
                             <p class = "sub-label">21 octobre 2019</p>
           <input onclick="displayFederals()" type="radio" checked ="checked" name="radio">
-           <span class="checkmark"></span>                 
+           <span class="checkmark"></span>
           </label>
           <label class="radioButton"><p class="label">Élections générales provinciales</p>
                             <p class = "sub-label">1er octobre 2018</p>
           <input onclick="displayProvincials()" type="radio" name="radio">
-           <span class="checkmark"></span>                 
+           <span class="checkmark"></span>
           </label>
           <label class="radioButton"><p class="label">42e élection fédérale</p>
                             <p class = "sub-label">19 octobre 2015</p>
           <input onclick="displayFederals()" type="radio" name="radio">
-           <span class="checkmark"></span>                 
+           <span class="checkmark"></span>
           </label>
           <label class="radioButton"><p class="label">Élections générales provinciales</p>
                             <p class = "sub-label">7 avril 2014</p>
           <input onclick="displayProvincials()" type="radio" name="radio">
-           <span class="checkmark"></span>                 
+           <span class="checkmark"></span>
           </label>
-        </form>  
+        </form>
         </ul>
-      </div>
+
    </section-1>
    <section-2 class = "middle-section section">
+    <ul>
+    <form id="PartisFederaux">
     <h1 class="section-title">Partis Politiques Fédéraux</h1>
-      </div>
+    <label class="radioButton"><p class="label">P.L.C</p>
+                      <p class = "sub-label">Parti libéral du Canada</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+    <label class="radioButton"><p class="label">P.C.C.</p>
+                      <p class = "sub-label">Parti conservateur du Canada</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+    <label class="radioButton"><p class="label">B.Q.</p>
+                      <p class = "sub-label">Bloc Québécois</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+    <label class="radioButton"><p class="label">N.P.D.</p>
+                      <p class = "sub-label">Nouveau parti  démocratique</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+    <label class="radioButton"><p class="label">P.V.C</p>
+                      <p class = "sub-label">Parti vert du Canada</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+    <label class="radioButton"><p class="label">P.P.C.</p>
+                      <p class = "sub-label">Parti populaire du Canada</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+    </form>
+
+    <form id="PartisProvinciaux"  >
+    <script>
+    document.getElementById('PartisProvinciaux').style.display="none";
+    </script>
+    <h1 class="section-title">Partis Politiques Provinciaux</h1>
+    <label class="radioButton"><p class="label">C.A.Q</p>
+                      <p class = "sub-label">Coalition avenir Québec</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+
+    <label class="radioButton"><p class="label">P.L.Q.</p>
+                      <p class = "sub-label">Parti libéral du Québec</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+
+    <label class="radioButton"><p class="label">P.Q.</p>
+                      <p class = "sub-label">Parti  québécois</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+
+    <label class="radioButton"><p class="label">Q.S.</p>
+                      <p class = "sub-label">Québec solidaire</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+
+    <label class="radioButton"><p class="label">P.V.Q.</p>
+                      <p class = "sub-label">Parti vert du Québec</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+
+    <label class="radioButton"><p class="label">P.C.Q</p>
+                      <p class = "sub-label">Parti conservateur du Québec</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+
+    <label class="radioButton"><p class="label">P.I.Q.</p>
+                      <p class = "sub-label">Parti pour l'indépendance du Québec</p>
+    <input type="checkbox" checked="checked">
+    <span class="squarecheckmark"></span>
+    </label>
+    </form>
+    </ul>
+
    </section-2>
    <section-3 class = "right-section section">
       <h1 class="section-title">Actions</h1>

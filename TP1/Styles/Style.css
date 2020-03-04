@@ -135,3 +135,30 @@ body {
   border-radius: 50%;
   background: grey;
 }
+.squarecheckmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: solid 0.2mm grey;
+}
+.squarecheckmark:after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+.radioButton input:checked ~ .squarecheckmark:after {
+  display: none;
+}
+.radioButton .squarecheckmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid  grey;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
