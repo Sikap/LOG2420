@@ -38,7 +38,7 @@ class sectionsManager {
             document.getElementById('showButton').style.color = 'white';
             document.getElementById('compareButton').setAttribute('disabled', true);
             document.getElementById('compareButton').style.backgroundColor = 'lightgray';
-            document.getElementById('compareButton').removeAttribute('style.color');            
+            document.getElementById('compareButton').removeAttribute('style.color');
         }
         if (this.selectionsCounter === 2) {
             document.getElementById('compareButton').removeAttribute('disabled');

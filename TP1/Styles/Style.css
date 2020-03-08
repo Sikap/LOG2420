@@ -51,6 +51,7 @@ body {
     background-color: white;
   }
 .section-title{
+  
     color: black;
     font-family: 'Arial';
     font-weight: 400;
@@ -75,11 +76,13 @@ body {
   }
 
 .Electionslabel,.PartisFederauxlabel,.PartisProvinciauxlabel{
+  font-family: 'Arial';
   left: 13%;
   font-size: smaller;
 }
 
 .ElectionsSub-label ,.PartisFederauxSub-label,.PartisProvinciauxSub-label{
+  font-family: 'Arial';
   left: 15%;
   font-size: smaller;
   color: grey;
