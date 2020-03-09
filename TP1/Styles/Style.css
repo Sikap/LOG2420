@@ -210,13 +210,6 @@ body {
   top: 13%;
 }
 
-<<<<<<< HEAD
-=======
-#border{
-
-}
-
->>>>>>> 95f847723832b0b2134f609bf9b1e153a9197a86
 nav ul{overflow:hidden; overflow-y:scroll;}
 
 .list{
@@ -242,7 +235,6 @@ nav ul{overflow:hidden; overflow-y:scroll;}
   border: solid 1px gray;
   background-color: white;
 }
-<<<<<<< HEAD
 
 .starIcon{
   position: relative;
@@ -262,5 +254,3 @@ nav ul{overflow:hidden; overflow-y:scroll;}
   border: none;
   background-color: lightgray;
 }
-=======
->>>>>>> 95f847723832b0b2134f609bf9b1e153a9197a86
