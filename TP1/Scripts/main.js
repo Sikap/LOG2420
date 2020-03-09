@@ -1,3 +1,4 @@
+
 class sectionsManager {
     selectionsCounter;
 
@@ -50,28 +51,21 @@ class sectionsManager {
         }
     };
 
-    confirmShow = () => {
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = () => {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById('compareButton').innerHTML = 'hi';
-              }
-            xhttp.open("GET", "partiesData.xml", true);
-            xhttp.send();
-        }
-    };
-
-    confirmCompare = () => {
-        let xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = () => {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById('main-section') = document.getElementById('PartisProvinciaux');
-              }
-            xhttp.open("GET", "partiesData.xml", true);
-            xhttp.send();
-        }
-    };
-
 }
 
 let manager = new sectionsManager();
+
+
+
+confirmShow = () => {
+    document.getElementById('main-section').style.display = 'none';
+    document.getElementById('showPage').style.display = 'block';
+};
+
+confirmCompare = () => {
+    document.getElementById('main-section').style.display = 'none';
+    document.getElementById('comparePage').style.display = 'block';
+    document.getElementById('showPage').style.display = 'block';
+    document.getElementById('showPage').style.width = '40%' ;
+    document.getElementById('comparePage').style.width = '40%';
+};
