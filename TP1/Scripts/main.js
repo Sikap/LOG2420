@@ -9,11 +9,13 @@ class sectionsManager {
     displayFederals = () => {
         document.getElementById('PartisProvinciaux').style.display = "none";
         document.getElementById('PartisFederaux').style.display = "block";
+        document.getElementById('titlePartis').innerHTML ="Partis politiques fédéreaux";
     };
 
     displayProvincials = () => {
         document.getElementById('PartisFederaux').style.display = "none";
         document.getElementById('PartisProvinciaux').style.display = "block";
+        document.getElementById('titlePartis').innerHTML ="Partis politiques provinciaux";
     };
 
     updateSelectionsCounter = (elementId) => {
@@ -32,6 +34,8 @@ class sectionsManager {
             document.getElementById('compareButton').setAttribute('disabled', true);
             document.getElementById('showButton').style.backgroundColor = 'lightgray';
             document.getElementById('compareButton').style.backgroundColor = 'lightgray';
+            document.getElementById('showButton').style.color = 'grey';
+            document.getElementById('compareButton').style.color = 'grey';
         }
         if (this.selectionsCounter === 1) {
             document.getElementById('showButton').removeAttribute('disabled');
@@ -40,6 +44,7 @@ class sectionsManager {
             document.getElementById('compareButton').setAttribute('disabled', true);
             document.getElementById('compareButton').style.backgroundColor = 'lightgray';
             document.getElementById('compareButton').removeAttribute('style.color');
+            document.getElementById('compareButton').style.color = 'grey';
         }
         if (this.selectionsCounter === 2) {
             document.getElementById('compareButton').removeAttribute('disabled');
@@ -49,6 +54,7 @@ class sectionsManager {
             document.getElementById('showButton').style.backgroundColor = 'lightgray';
             document.getElementById('showButton').setAttribute('disabled', true);
         }
+
     };
 
 }

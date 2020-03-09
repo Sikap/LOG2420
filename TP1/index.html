@@ -17,104 +17,143 @@
       <i class="material-icons depIcons">more_vert</i>
     </header>
 
-  <section-4 id="main-section" >
-   <section-1 id="left-section" class="left-section section">
-        <h1 class="section-title">Élections</h1>
-        <ul>
-        <form>
-          <label class="radioButton"><p class="Electionslabel"></p><p class = "Electionssub-label"></p>
-          <input onclick="manager.displayFederals()" type="radio" checked ="checked" name="radio">
-          <span class="checkmark"></span>
-          </label>
-          <label class="radioButton"><p class="Electionslabel"></p><p class = "ElectionsSub-label"></p>
-          <input onclick="manager.displayProvincials()" type="radio" name="radio">
-          <span class="checkmark"></span>
-          </label>
-          <label class="radioButton"><p class="Electionslabel"></p><p class = "ElectionsSub-label"></p>
-          <input onclick="manager.displayFederals()" type="radio" name="radio">
-          <span class="checkmark"></span>
-          </label>
-          <label class="radioButton"><p class="Electionslabel"></p><p class = "ElectionsSub-label"></p>
-          <input onclick="manager.displayProvincials()" type="radio" name="radio">
-          <span class="checkmark"></span>
-          </label>
-        </form>
-        </ul>
-   </section-1>
-   <section-2 class = "middle-section section">
-    <ul>
-    <form id="PartisFederaux">
-    <h1 class="section-title">Partis Politiques Fédéraux</h1>
-    <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
-    <input id="P.L.C" type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.L.C')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
-    <input id="P.C.C." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.C.C.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
-    <input id="B.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('B.Q.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
-    <input id="N.P.D." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('N.P.D.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
-    <input id="P.V.C" type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.V.C')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
-    <input id="P.P.C." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.P.C.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    </form>
+    <section-4 id="main-section" >
+    <section-1 id="left-section" class="left-section section">
+    <h1 class="section-title">Élections</h1>
+          <ul>
+          <form>
+            <label class="radioButton"><p class="Electionslabel"></p><p class = "Electionssub-label"></p>
+            <input onclick="manager.displayFederals()" type="radio" checked ="checked" name="radio">
+            <span class="checkmark"></span>
+            </label>
+            <label class="radioButton"><p class="Electionslabel"></p><p class = "ElectionsSub-label"></p>
+            <input onclick="manager.displayProvincials()" type="radio" name="radio">
+            <span class="checkmark"></span>
+            </label>
+            <label class="radioButton"><p class="Electionslabel"></p><p class = "ElectionsSub-label"></p>
+            <input onclick="manager.displayFederals()" type="radio" name="radio">
+            <span class="checkmark"></span>
+            </label>
+            <label class="radioButton"><p class="Electionslabel"></p><p class = "ElectionsSub-label"></p>
+            <input onclick="manager.displayProvincials()" type="radio" name="radio">
+            <span class="checkmark"></span>
+            </label>
+          </form>
+          </ul>
+     </section-1>
+     <section-2 class = "middle-section section">
+      <h1 class="section-title" id = "titlePartis">Partis Politiques Fédéraux</h1>
+      <ul>
+      <form id="PartisFederaux">
+      <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
+      <input id="P.L.C" type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.L.C')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
+      <input id="P.C.C." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.C.C.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
+      <input id="B.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('B.Q.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
+      <input id="N.P.D." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('N.P.D.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
+      <input id="P.V.C" type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.V.C')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisFederauxlabel"></p><p class = "PartisFederauxSub-label"></p>
+      <input id="P.P.C." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.P.C.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      </form>
 
-    <form id="PartisProvinciaux">
+      <form id="PartisProvinciaux">
+      <script>
+      document.getElementById('PartisProvinciaux').style.display="none";
+      </script>
+      <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
+      <input id="C.A.Q" type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('C.A.Q')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
+      <input id="P.L.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.L.Q.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
+      <input id="P.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.Q.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
+      <input id="Q.S." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('Q.S.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
+      <input id="P.V.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.V.Q.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
+      <input id="P.C.Q" type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.C.Q')">
+      <span class="squarecheckmark"></span>
+      </label>
+      <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxsub-label"></p>
+      <input id="P.I.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.I.Q.')">
+      <span class="squarecheckmark"></span>
+      </label>
+      </form>
+      </ul>
+
+     </section-2>
+     <section-3 class = "right-section section">
+        <h1 class="section-title">Actions</h1>
+        <div>
+        <input id="showButton" class="validationButton" type="submit" value="Connaitre les propositions..." disabled
+        onclick="confirmShow()" >
+        <input id="compareButton" class="validationButton" type="submit" value="Comparer les propositions..." disabled
+        onclick="confirmCompare()" >
+        </div>
+     </section-3>
+    </section-4>
+
+  <div id='border'>
+    <div id="comparePage">
     <script>
-    document.getElementById('PartisProvinciaux').style.display="none";
+      document.getElementById('comparePage').style.display ='none';
     </script>
-    <h1 class="section-title">Partis Politiques Provinciaux</h1>
-    <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
-    <input id="C.A.Q" type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('C.A.Q')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
-    <input id="P.L.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.L.Q.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
-    <input id="P.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.Q.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
-    <input id="Q.S." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('Q.S.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
-    <input id="P.V.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.V.Q.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxSub-label"></p>
-    <input id="P.C.Q" type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.C.Q')">
-    <span class="squarecheckmark"></span>
-    </label>
-    <label class="radioButton"><p class="PartisProvinciauxlabel"></p><p class = "PartisProvinciauxsub-label"></p>
-    <input id="P.I.Q." type="checkbox" checked="checked" onclick="manager.updateSelectionsCounter('P.I.Q.')">
-    <span class="squarecheckmark"></span>
-    </label>
-    </form>
-    </ul>
+        <ul class ="list">
+        <li><header class="headerElement" style="background-color: lightgray">P.V.C</header></li>
+          <li><div class="headerElement"><h2>Élections</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Environnement</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Éducation</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Santé et Services Sociaux</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Immigration</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Économie</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Arts et culture</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Transports</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Énergie</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+        </ul>
+    </div>
 
-   </section-2>
-   <section-3 class = "right-section section">
-      <h1 class="section-title">Actions</h1>
+    <div id="showPage">
+    <script>
+      document.getElementById('showPage').style.display ='none';
+    </script>
       <div>
-      <input id="showButton" class="validationButton" type="submit" value="Connaitre les propositions..." disabled
-      onclick="confirmShow()" >
-      <input id="compareButton" class="validationButton" type="submit" value="Comparer les propositions..." disabled
-      onclick="confirmCompare()" >
+        <ul class ="list">
+        <li><header class="headerElement" style="background-color: lightgray">N.P.D.</header></li>
+          <li><div class="headerElement"><h2>Élections</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Environnement</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Éducation</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Santé et Services Sociaux</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Immigration</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Économie</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Arts et culture</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Transports</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+          <li><div class="headerElement"><h2>Énergie</h2></div><div class="textElement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</div></li>
+        </ul>
       </div>
    </section-3>
   </section-4>
@@ -158,7 +197,6 @@
       </ul>
     </div>
   </div>
-</div>
-  </body>
+    </body>
 
-</html>
+  </html>

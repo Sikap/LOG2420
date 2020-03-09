@@ -36,26 +36,32 @@ body {
 #main-section {
     border: 1px none;
     width: 90%;
-    height: 80%;
+    height: 90%;
     position: absolute;
-    top: 20%
+    top: 15%
 }
 .section {
     position: absolute;
     width: 30%;
+    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.219607843137255);
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.219607843137255);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.219607843137255);
 }
 
 .left-section {
     border: 1px none;
     height: 100%;
     background-color: white;
+    border-radius: 2px;
+    left: 5%;
+
   }
 .section-title{
-  
     color: black;
     font-family: 'Arial';
     font-weight: 400;
     font-size: 20px;
+    padding-left: 10%;
 
 }
 .middle-section {
@@ -64,6 +70,7 @@ body {
     position: absolute;
     left: 37.5%;
     background-color: white;
+    left: 42%;
   }
 
 .right-section {
@@ -73,25 +80,29 @@ body {
     right: 0%;
     background-color: white;
     width: 25%;
+    left: 80%;
   }
 
 .Electionslabel,.PartisFederauxlabel,.PartisProvinciauxlabel{
   font-family: 'Arial';
-  left: 13%;
+  left: 15%;
+  font-size: 16px;
   font-size: smaller;
+  margin-block-end: -13px;
+ margin-block-start: 40px;
 }
 
 .ElectionsSub-label ,.PartisFederauxSub-label,.PartisProvinciauxSub-label{
   font-family: 'Arial';
   left: 15%;
-  font-size: smaller;
+  font-size: 14px;
   color: grey;
 }
 
 .radioButton {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 40px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -199,6 +210,13 @@ body {
   top: 13%;
 }
 
+<<<<<<< HEAD
+=======
+#border{
+
+}
+
+>>>>>>> 95f847723832b0b2134f609bf9b1e153a9197a86
 nav ul{overflow:hidden; overflow-y:scroll;}
 
 .list{
@@ -224,6 +242,7 @@ nav ul{overflow:hidden; overflow-y:scroll;}
   border: solid 1px gray;
   background-color: white;
 }
+<<<<<<< HEAD
 
 .starIcon{
   position: relative;
@@ -243,3 +262,5 @@ nav ul{overflow:hidden; overflow-y:scroll;}
   border: none;
   background-color: lightgray;
 }
+=======
+>>>>>>> 95f847723832b0b2134f609bf9b1e153a9197a86
