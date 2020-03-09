@@ -69,3 +69,23 @@ confirmCompare = () => {
     document.getElementById('showPage').style.width = '40%' ;
     document.getElementById('comparePage').style.width = '40%';
 };
+
+transformStar = (starId) => {
+    firstclick = true;
+    if(document.getElementById(starId).style.backgroundColor === 'gray'){
+        document.getElementById(starId).style.backgroundColor = 'white';
+    } else{
+        if(document.getElementById(starId).style.backgroundColor === 'white' || firstclick){
+            document.getElementById(starId).style.colo
+            document.getElementById(starId).style.backgroundColor = 'gray';
+            firstclick = false;
+            }
+    }
+};
+
+goback = () => {
+    document.getElementById('main-section').style.display = 'block';
+    document.getElementById('showPage').style.display = 'none';
+    document.getElementById('comparePage').style.display = 'none';
+
+};

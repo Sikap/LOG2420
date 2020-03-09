@@ -199,10 +199,6 @@ body {
   top: 13%;
 }
 
-#border{
-  
-}
-
 nav ul{overflow:hidden; overflow-y:scroll;}
 
 .list{
@@ -227,4 +223,23 @@ nav ul{overflow:hidden; overflow-y:scroll;}
   height: 240px;
   border: solid 1px gray;
   background-color: white;
+}
+
+.starIcon{
+  position: relative;
+  left: 80%;
+  bottom: 90%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: none;
+}
+
+.fa-star {
+ color: black;
+}
+
+.arrowIcon{
+  border: none;
+  background-color: lightgray;
 }
