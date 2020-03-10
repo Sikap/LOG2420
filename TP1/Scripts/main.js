@@ -64,11 +64,14 @@ let manager = new sectionsManager();
 
 
 confirmShow = () => {
+    document.getElementById('returnButton').style.display="block";
     document.getElementById('main-section').style.display = 'none';
+    document.getElementById('showPage').style.width = '80%' ;
     document.getElementById('showPage').style.display = 'block';
 };
 
 confirmCompare = () => {
+    document.getElementById('returnButton').style.display="block";
     document.getElementById('main-section').style.display = 'none';
     document.getElementById('comparePage').style.display = 'block';
     document.getElementById('showPage').style.display = 'block';
@@ -78,18 +81,18 @@ confirmCompare = () => {
 
 transformStar = (starId) => {
     firstclick = true;
-    if(document.getElementById(starId).style.backgroundColor === 'gray'){
+    if(document.getElementById(starId).style.backgroundColor === 'gold'){
         document.getElementById(starId).style.backgroundColor = 'white';
     } else{
         if(document.getElementById(starId).style.backgroundColor === 'white' || firstclick){
-            document.getElementById(starId).style.colo
-            document.getElementById(starId).style.backgroundColor = 'gray';
+            document.getElementById(starId).style.backgroundColor = 'gold';
             firstclick = false;
             }
     }
 };
 
 goback = () => {
+    document.getElementById('returnButton').style.display="none";
     document.getElementById('main-section').style.display = 'block';
     document.getElementById('showPage').style.display = 'none';
     document.getElementById('comparePage').style.display = 'none';
